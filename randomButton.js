@@ -1,7 +1,6 @@
 function randomizer() {
     const collection = document.getElementsByTagName("button");
     let aux = 1 + Math.floor(Math.random() * (collection.length - 1));
-    console.log(collection.length, aux);
     for (let i = 0; i < collection.length - 1; ++i) {
         collection[i].onclick = function() {
             if (this.innerHTML == aux) {
@@ -22,7 +21,6 @@ window.onload = randomizer();
 document.getElementsByClassName("retry")[0].onclick = function() {    
     const parent = document.getElementById("btn_parent");
     parent.innerHTML = "";
-    console.log(document.getElementsByTagName("button").length);
     let number_of_buttons = document.getElementsByTagName("input")[0].value;
     for (let i = 0; i < number_of_buttons; ++i) {
         const btn = document.createElement("button");
