@@ -15,7 +15,7 @@ function randomizer() {
         };
     }
 }
-console.log("test");
+
 window.onload = randomizer();
 
 document.getElementsByClassName("retry")[0].onclick = function() {    
