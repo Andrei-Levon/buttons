@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2 id="winner">Choose a button</h2>
+        <div id="btn_parent">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+        </div>
+        <div hidden id="reveal">
+            <p>Choose the number of buttons</p>
+            <input type="range" value="3" min="2" max="50" oninput="this.nextElementSibling.value = this.value"></input>
+            <output>3</output>
+            <button class="retry">Try again</button>
+        </div>
+        <script src="randomButton.js"></script>
+    </body>
+</html>

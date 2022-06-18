@@ -1,0 +1,37 @@
+body {
+    padding-top: 300px;
+    height: 900px;
+    background-image: radial-gradient(#FFF0F5, #5F9EA0);
+    text-align: center;
+    font-family: "Verdana";
+    color: #2F4F4F;
+}
+button {
+    font-family: "Verdana";
+    font-size: 15px;
+    color: #FFF0F5;
+    padding: 11px 25px;
+    margin: 3px 20px 10px;
+    background-color: #2F4F4F;
+    border: 2px solid #2F4F4F;
+    border-radius: 17px;
+    cursor: pointer;
+    animation: fadeIn 2s;
+}
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+button:hover {
+    background-color: #FFF0F5;
+    color: #2F4F4F;
+    border: 2px solid #2F4F4F;
+    transition: 0.3s;
+}
+p {
+    animation: fadeIn 2s; 
+}
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
